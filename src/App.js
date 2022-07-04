@@ -3,6 +3,7 @@ import "./App.css";
 function App() {
   const name = "Mati"; //variable for storing name
   const isMale = true;
+  //Block Element Modifier
 
   function getGreetings(user) {
     if (user) {
@@ -13,6 +14,9 @@ function App() {
   }
   return (
     <div className="App">
+      <div className="app__title">Hello World</div>
+      <div className="app__title--large">Hello World</div>
+      <div className="app__title--small">Hello World</div>
       <h1>{getGreetings("Matiz")}</h1>
       <hr></hr>
       <h2>~{name}</h2>
