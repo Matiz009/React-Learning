@@ -2,6 +2,10 @@ import "./App.css";
 import Header from "./Header";
 
 function App() {
+  //There are two types of components
+  //1 class based
+  //2 function based
+
   const name = "Mati"; //variable for storing name
   const isMale = true;
   //Block Element Modifier
