@@ -1,32 +1,22 @@
 import "./App.css";
-import Header from "./Header";
+import React, { useState } from "react";
 
 function App() {
-  //There are two types of components
-  //1 class based
-  //2 function based
+  const [count, setCount] = useState(0);
 
-  const name = "Mati"; //variable for storing name
-  const isMale = true;
-  //Block Element Modifier
+  const increment = () => {
+    setCount(count + 1);
+  };
 
-  function getGreetings(user) {
-    if (user) {
-      return <h4>Hello, {user}!</h4>;
-    } else {
-      return <h5>Hello Stranger!</h5>;
-    }
-  }
+  const decrement = () => {
+    setCount(count - 1);
+  };
   return (
     <div className="App">
-      <Header />
-      <div className="app__title">This is a title.</div>
-      <div className="app__title--large">This is a large title</div>
-      <div className="app__title--small">This is a small title.</div>
-      <h1>{getGreetings("Matiz")}</h1>
-      <hr></hr>
-      <h2>~{name}</h2>
-      <h3>You are a {isMale ? "Male" : "Female"}</h3>
+      <h1>Welcome to my couter app</h1>
+      <p>The count is : {count}</p>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
     </div>
   );
 }
