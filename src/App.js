@@ -1,4 +1,5 @@
 import "./App.css";
+import Header from "./Header";
 
 function App() {
   const name = "Mati"; //variable for storing name
@@ -14,9 +15,10 @@ function App() {
   }
   return (
     <div className="App">
-      <div className="app__title">Hello World</div>
-      <div className="app__title--large">Hello World</div>
-      <div className="app__title--small">Hello World</div>
+      <Header />
+      <div className="app__title">This is a title.</div>
+      <div className="app__title--large">This is a large title</div>
+      <div className="app__title--small">This is a small title.</div>
       <h1>{getGreetings("Matiz")}</h1>
       <hr></hr>
       <h2>~{name}</h2>
