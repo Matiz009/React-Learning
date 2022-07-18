@@ -1,11 +1,9 @@
-.app__title {
+.app {
   color: red;
 }
-.app__title--large {
-  color: red;
-  font-size: 90px;
+.d1 {
+  color: green;
 }
-.app__title--small {
-  color: blue;
-  font-size: 10px;
+.main {
+  color: black;
 }
