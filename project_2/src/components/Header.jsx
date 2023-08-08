@@ -27,6 +27,7 @@ const Header = () => {
         borderRadius={'full'}
         colorScheme="purple"
         onClick={onOpen}
+        zIndex={'overlay'}
       >
         {' '}
         <BiMenuAltLeft size={'20'} />{' '}
