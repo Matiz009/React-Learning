@@ -42,10 +42,7 @@ const Footer = () => {
           borderLeft={['none', '1px solid white']}
           borderRight={['none', '1px solid white']}
         >
-          <Heading textTransform={'uppercase'} textAlign={'center'}>
-            {' '}
-            COINS HUB{' '}
-          </Heading>{' '}
+          <Heading textAlign={'center'}> CryptoInsight </Heading>{' '}
           <Text> All Rights Reserved </Text>{' '}
         </VStack>{' '}
         <VStack w={'full'}>
