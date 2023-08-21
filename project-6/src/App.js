@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import "./App.css";
+import Chapter2 from "./Chapters/Chapter2";
 
 function App() {
   console.log("App");
   return (
     <div className="App">
-      <div className="App-header">
-        {" "}
-        Counter App <Counter />{" "}
-      </div>{" "}
+      {" "}
+      {/* <div className="App-header">
+                                {" "}
+                                Counter App <Counter />{" "}
+                              </div>{" "} */}{" "}
+      <Chapter2 />
     </div>
   );
 }
