@@ -1,0 +1,56 @@
+/* Video.css */
+
+.video-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    background-color: #f5f5f5;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.video-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.video-status {
+    font-size: 1.1rem;
+    margin-top: 8px;
+    color: #777;
+}
+
+.like-button {
+    background-color: #ff3860;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.like-button:hover {
+    background-color: #d81b48;
+}
