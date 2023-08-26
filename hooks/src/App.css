@@ -1,27 +1,48 @@
-.App {
-    text-align: center;
-}
-
-.h1 {
-    display: flex;
-    height: 50vh;
-    align-items: flex-end;
+.container {
+    display: grid;
     justify-content: center;
-    color: aliceblue;
+    align-items: center;
+    height: 100vh;
 }
 
-.button {
-    display: inline-block;
+.person {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.person:hover {
+    transform: translateY(-5px);
+}
+
+.name {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.age {
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn {
     padding: 10px 20px;
-    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    background-color: #073757;
-    color: white;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 20px;
+    /* Add margin to separate the button from the person elements */
 }
 
-.button:hover {
-    background-color: #4c81a5;
+.btn:hover {
+    background-color: #0056b3;
 }
