@@ -3,6 +3,7 @@ import "../App.css";
 const UseEffect = () => {
   const [counter, setCounter] = useState(0);
   useEffect(() => {
+    alert("UseEffect 1");
     if (counter > 0) {
       document.title = ` Chats (${counter})`;
     } else {
@@ -12,6 +13,9 @@ const UseEffect = () => {
   const handleClick = () => {
     setCounter(counter + 1);
   };
+  useEffect(() => {
+    alert("UseEffect 2");
+  }, []);
   return (
     <div>
       <center>
