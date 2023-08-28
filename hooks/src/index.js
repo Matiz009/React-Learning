@@ -6,6 +6,7 @@ import UseStateArray from "./Components/UseStateArray";
 import SpreadOperator from "./Components/SpreadOperator";
 import ShortCircuitEvaluation from "./Components/ShortCircuitEvaluation";
 import LoginForm from "./Components/LoginForm";
+import UseEffect from "./Components/UseEffect";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +18,9 @@ root.render(
     {
       //<ShortCircuitEvaluation />
     }{" "}
-    <LoginForm />
+    {
+      //<LoginForm />
+    }{" "}
+    <UseEffect />
   </React.StrictMode>
 );
