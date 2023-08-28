@@ -5,6 +5,7 @@ import App from "./App";
 import UseStateArray from "./Components/UseStateArray";
 import SpreadOperator from "./Components/SpreadOperator";
 import ShortCircuitEvaluation from "./Components/ShortCircuitEvaluation";
+import LoginForm from "./Components/LoginForm";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,9 @@ root.render(
     {
       //<UseStateArray / >
     }{" "}
-    <ShortCircuitEvaluation />
+    {
+      //<ShortCircuitEvaluation />
+    }{" "}
+    <LoginForm />
   </React.StrictMode>
 );
