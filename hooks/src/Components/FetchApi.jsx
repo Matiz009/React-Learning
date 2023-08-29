@@ -21,8 +21,8 @@ const FetchApi = () => {
       <div className="container-fluid mt-5">
         <div className="row text-center">
           {" "}
-          {users.map((curElem) => {
-            const { avatar_url, id, login, type } = curElem;
+          {users.map((currentElements) => {
+            const { avatar_url, id, login, type } = currentElements;
             return (
               <div className="col-10 col-md-4 mt-5" key={id}>
                 <div className="card p-2">
