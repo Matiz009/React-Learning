@@ -8,6 +8,7 @@ import ShortCircuitEvaluation from "./Components/ShortCircuitEvaluation";
 import LoginForm from "./Components/LoginForm";
 import UseEffect from "./Components/UseEffect";
 import CleanUp from "./Components/CleanUp";
+import FetchApi from "./Components/FetchApi";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -25,6 +26,9 @@ root.render(
     {
       //<UseEffect / >
     }{" "}
-    <CleanUp />
+    {
+      //<CleanUp />
+    }{" "}
+    <FetchApi />
   </React.StrictMode>
 );
