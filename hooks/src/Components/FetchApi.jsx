@@ -1,23 +1,36 @@
 import React, { useEffect, useState } from "react";
 import { FcApproval } from "react-icons/fc";
+import Loading from "./Loading";
 
 const FetchApi = () => {
   const [users, setUsers] = useState([]);
+  const [loader, setLoader] = useState(false);
+  const [err, setErr] = useState("");
+
   const getUsers = async () => {
     try {
       const response = await fetch("https://api.github.com/users");
+      setLoader(true);
       setUsers(await response.json());
+      setLoader(false);
     } catch (error) {
       console.log("Error is " + error);
+      setErr(error);
+      setLoader(true);
     }
   };
 
   useEffect(() => {
     getUsers();
   }, []);
-  return (
+
+  return loader === true ? (
+    <>
+      <Loading errorVal={err} />{" "}
+    </>
+  ) : (
     <div>
-      <h2 className=" text-center"> List of GitHub Users </h2>{" "}
+      <h2 className="text-center"> List of GitHub Users </h2>{" "}
       <div className="container-fluid mt-5">
         <div className="row text-center">
           {" "}
