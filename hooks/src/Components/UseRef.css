@@ -1,0 +1,63 @@
+/* UseRef.css */
+
+
+/* Styling for the container */
+
+.useRef-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+/* Styling for form groups */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+/* Styling for the label */
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* Styling for the input field */
+
+#luckyName {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+
+/* Styling for the submit button */
+
+.submit-button {
+    background-color: #d4e0ed;
+    color: rgb(18, 43, 139);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #007bff;
+    color: white;
+}

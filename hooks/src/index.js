@@ -9,6 +9,7 @@ import LoginForm from "./Components/LoginForm";
 import UseEffect from "./Components/UseEffect";
 import CleanUp from "./Components/CleanUp";
 import FetchApi from "./Components/FetchApi";
+import UseRef from "./Components/UseRef";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -29,6 +30,9 @@ root.render(
     {
       //<CleanUp />
     }{" "}
-    <FetchApi />
+    {
+      //<FetchApi />
+    }{" "}
+    <UseRef />
   </React.StrictMode>
 );
