@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const LoginForm = () => {
   const formContainerStyle = {
@@ -59,41 +60,45 @@ const LoginForm = () => {
       setPassword("");
     } else alert("Fill all fields");
   };
+  const location = useLocation();
+
+  console.log(location.pathname);
 
   return (
     <div style={formContainerStyle}>
       <form>
-        <h2 style={{ marginBottom: "15px" }}>Login</h2>
-        <label style={labelStyle}>Email</label>
+        <h2 style={{ marginBottom: "15px" }}> Login </h2>{" "}
+        <label style={labelStyle}> Email </label>{" "}
         <input
           style={inputStyle}
           type="email"
           name="email"
           onChange={changeEmailHandler}
           value={email}
-        />
-        <label style={labelStyle}>Password</label>
+        />{" "}
+        <label style={labelStyle}> Password </label>{" "}
         <input
           style={inputStyle}
           type="password"
           name="password"
           onChange={changePasswordHandler}
           value={password}
-        />
+        />{" "}
         <button style={buttonStyle} onClick={btnHandler}>
-          Login
-        </button>
-      </form>
+          Login{" "}
+        </button>{" "}
+        <p> {location.pathname} </p>{" "}
+      </form>{" "}
       {isLoggedIn && (
         <>
+          {" "}
           {userList.map((user, index) => (
             <div key={index}>
-              <p>Email: {user.email}</p>
-              <p>Password: {user.password}</p>
+              <p> Email: {user.email} </p> <p> Password: {user.password} </p>{" "}
             </div>
-          ))}
+          ))}{" "}
         </>
-      )}
+      )}{" "}
     </div>
   );
 };

@@ -12,6 +12,7 @@ import FetchApi from "./Components/FetchApi";
 import UseRef from "./Components/UseRef";
 import UseReducer from "./Components/UseReducer";
 import CompA from "./Components/UseContext/CompA";
+import UseLocation from "./Components/UseLocation";
 const BioData = createContext();
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -41,9 +42,7 @@ root.render(
     {
       // <UseReducer />
     }{" "}
-    <BioData.Provider value={"Mati ul Rehman"}>
-      <CompA />
-    </BioData.Provider>{" "}
+    <UseLocation />
   </React.StrictMode>
 );
 export { BioData };
