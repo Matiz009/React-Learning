@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
+import UseCustomHook from "./useCustomHook";
 const UseEffect = () => {
   const [counter, setCounter] = useState(0);
-  useEffect(() => {
-    alert("UseEffect 1");
-    if (counter > 0) {
-      document.title = ` Chats (${counter})`;
-    } else {
-      document.title = `Chats`;
-    }
-  }, [counter]);
+  UseCustomHook(counter);
   const handleClick = () => {
     setCounter(counter + 1);
   };
