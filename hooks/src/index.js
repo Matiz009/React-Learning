@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -11,7 +11,8 @@ import CleanUp from "./Components/CleanUp";
 import FetchApi from "./Components/FetchApi";
 import UseRef from "./Components/UseRef";
 import UseReducer from "./Components/UseReducer";
-
+import CompA from "./Components/UseContext/CompA";
+const BioData = createContext();
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -37,6 +38,12 @@ root.render(
     {
       //<UseRef />
     }{" "}
-    <UseReducer />
+    {
+      // <UseReducer />
+    }{" "}
+    <BioData.Provider value={"Mati ul Rehman"}>
+      <CompA />
+    </BioData.Provider>{" "}
   </React.StrictMode>
 );
+export { BioData };
