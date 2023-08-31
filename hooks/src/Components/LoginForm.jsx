@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const LoginForm = () => {
   const formContainerStyle = {
@@ -58,7 +60,20 @@ const LoginForm = () => {
       setLoggedIn(true);
       setEmail("");
       setPassword("");
-    } else alert("Fill all fields");
+      toast.success("🦄 Wow so easy!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    } else
+      toast("Fill all fields", {
+        position: "top-center",
+      });
   };
   const location = useLocation();
 
@@ -99,6 +114,7 @@ const LoginForm = () => {
           ))}{" "}
         </>
       )}{" "}
+      <ToastContainer />
     </div>
   );
 };
