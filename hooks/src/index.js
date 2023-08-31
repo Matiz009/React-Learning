@@ -10,6 +10,7 @@ import UseEffect from "./Components/UseEffect";
 import CleanUp from "./Components/CleanUp";
 import FetchApi from "./Components/FetchApi";
 import UseRef from "./Components/UseRef";
+import UseReducer from "./Components/UseReducer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -33,6 +34,9 @@ root.render(
     {
       //<FetchApi />
     }{" "}
-    <UseRef />
+    {
+      //<UseRef />
+    }{" "}
+    <UseReducer />
   </React.StrictMode>
 );
