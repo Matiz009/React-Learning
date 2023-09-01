@@ -13,36 +13,8 @@ import UseRef from "./Components/UseRef";
 import UseReducer from "./Components/UseReducer";
 import CompA from "./Components/UseContext/CompA";
 import UseLocation from "./Components/UseLocation";
+import Todo from "./Components/Todo";
 const BioData = createContext();
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    {" "}
-    {
-      //<UseStateArray / >
-    }{" "}
-    {
-      //<ShortCircuitEvaluation />
-    }{" "}
-    {
-      //<LoginForm />
-    }{" "}
-    {
-      //<UseEffect / >
-    }{" "}
-    {
-      //<CleanUp />
-    }{" "}
-    {
-      //<FetchApi />
-    }{" "}
-    {
-      //<UseRef />
-    }{" "}
-    {
-      // <UseReducer />
-    }{" "}
-    <UseLocation />
-  </React.StrictMode>
-);
+root.render(<Todo />);
 export { BioData };
